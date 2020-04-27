@@ -93,8 +93,57 @@ namespace HelloWorld
             
             // GET USER INPUT;
             
+            // Type username and press enter
+            Console.WriteLine("Enter username:");
             
+            // create string variable and get user input and store into variable
+            string userName = Console.ReadLine();
+            
+            // Prit the value of the variable
+            Console.WriteLine("Username is: " + userName);
+            
+            // ReadLine returns a string, so if we want an INT we'll have to convert
+            // int age = Console.ReadLine();  -> Won't work
+            Console.WriteLine("Enter your age:");
+            int age = Convert.ToInt32(Console.ReadLine()); // GOOD
+            Console.WriteLine("Your age is: " + age);
+            
+            // OPERATORS
+            
+            /*
+               + addition
+               - subtraction
+               * multiplication
+               / division
+               % modulus
+               ++ increment
+               -- decrement
+               
+               logical
+               && and
+               || or
+               ! different/not
+            */
+            
+            // STRINGS
+            // a string in C# is actually an object, so it contains methods and properties that allows us to manipulate them
 
+            string greeting = "hello";
+            Console.WriteLine(greeting.Length); // Display string length
+            Console.WriteLine(greeting.ToUpper()); // Everything in capital case
+            Console.WriteLine(greeting.ToLower()); // Everything to lower case
+            
+            // skipped string concatenation as it's the same as other languages. Another method is string interpolation
+            // It substitutes values of variables into placeholders
+
+            string fistName = "John";
+            // using previously declared lastName
+            string interpolation = $"My full name is: {fistName} {lastName}"; // $ sign is mandatory
+            Console.WriteLine(interpolation);
+            // can reference string character via index numbers, starts at 0
+            Console.WriteLine(interpolation[0]); // output "M"
+            // can ask for index number with IndexOf()
+            Console.WriteLine(interpolation.IndexOf("y"));
         }
     }
 }
