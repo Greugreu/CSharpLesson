@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelloWord
+namespace HelloWorld
 {
     class Program
     {
@@ -51,8 +51,25 @@ namespace HelloWord
                m = 60 BAD
                names are case sensitive -> myVar !== myvar
                as most languages, C# has reserved words that can't be used as int, double
-            */           
-                
+            */
+            
+            // DATA TYPES
+
+            int integer = 5; // from -2,147,483,648 to 2,147,483,647
+            float floatNumber1 = 0.12F; // up to 6 to 7 digits
+            double floatNumber2 = 1.5; // up to 15 digits, can end with D as 1.5D (but not required)
+            long veryLongNumbers = 15000000000L; // from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+            bool boolean = true;
+            char singleCharacters = 'A';
+            string asTheTypeSay = "FooBar";
+            
+            // floats can also be scientific exponent
+            float f1 = 35e3F;
+            double d1 = 12E4;
+            Console.WriteLine(f1);
+            Console.WriteLine(d1);
+            
+            
         }
     }
 }
