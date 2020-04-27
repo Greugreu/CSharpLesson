@@ -6,6 +6,12 @@ namespace HelloWord
     {
         static void Main(string[] args)
         {
+            //Consoles commands
+            Console.Write("Foo"); // Display content, on the same line
+            Console.Write("Bar");
+            Console.WriteLine("Foo");// Display content on a new line
+            Console.WriteLine("Bar"); 
+            
             // Var String
             string name = "John";
             Console.WriteLine(name);
@@ -30,10 +36,23 @@ namespace HelloWord
             string fullName = name + " " +lastName;
             Console.WriteLine(fullName);
             
-            //
-            int x = 5;
-            int y = 6;
-            Console.WriteLine(x + y);
+            /* + operator act as a mathematical operator with numbers
+             int x = 5;
+             int y = 6;
+             Console.WriteLine(x + y);  Show the result of 5+6 */
+            
+            // Can declare multiple variables at the same time
+            int x = 5, y = 6, z = 60;
+            Console.WriteLine(x + y + z);
+            
+            /* General variable rules
+               Var names are called identifiers, they should be unique. It's better to use descriptive names
+               minutesPerHour = 60 GOOD
+               m = 60 BAD
+               names are case sensitive -> myVar !== myvar
+               as most languages, C# has reserved words that can't be used as int, double
+            */           
+                
         }
     }
 }
