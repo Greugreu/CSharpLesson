@@ -69,7 +69,32 @@ namespace HelloWorld
             Console.WriteLine(f1);
             Console.WriteLine(d1);
             
+            // TYPE CASTING
+            // Implicit
+
+            int intVar = 9;
+            double doubleCasting = intVar; // automatic int to double casting.
+            Console.WriteLine(intVar);
+            Console.WriteLine(doubleCasting);
             
+            // Explicit
+
+            double doubleVar = 9.78;
+            int intCasting = (int) doubleVar; // manual casting double to int.
+            Console.WriteLine(doubleVar);
+            Console.WriteLine(intCasting);
+            
+            // It is possible to convert via built-in methods
+            bool boolVar = true;
+            Console.WriteLine(Convert.ToString(intVar)); // convert to string
+            Console.WriteLine(Convert.ToDouble(intVar)); // convert to double
+            Console.WriteLine(Convert.ToInt32(doubleVar)); // convert to int
+            Console.WriteLine(Convert.ToString(boolVar)); // convert to string
+            
+            // GET USER INPUT;
+            
+            
+
         }
     }
 }
