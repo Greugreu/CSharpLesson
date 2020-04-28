@@ -133,12 +133,73 @@ namespace HelloWorld2
             int a = 0;
             do
             {
-                Console.WriteLine("Value of a {0}", a);
+                Console.WriteLine("Value of a: {0}", a);
                 a++;
             }
             while (a < 5);
             
             // FOR LOOP
+            /*
+                for (statement 1; statement 2; statement 3)
+                {
+                    code
+                }
+             */
+
+            for (int b = 0; b < 5; b++)
+            {
+                Console.WriteLine("Value of b: {0}", b);
+            }
+
+            for (int c = 0; c <= 10; c = c + 2)
+            {
+                Console.WriteLine("Value of c: {0}", c);
+            }
+            
+            // FOREACH
+            /*
+                forcheach (type variableName in arrayName)
+                {
+                    code
+                }
+             */
+
+            string[] cars = {"Audi", "Tesla", "Ford", "Mazda"};
+            foreach (string d in cars)
+            {
+                Console.WriteLine(d);
+            }
+            
+            // BREAK/CONTINUE STATEMENT
+            /*
+                as already seen, the break statement is used to stop a loop. But it can also be used to jump out of a loop
+             */
+
+            for (int e = 0; e < 10; e++)
+            {
+                if (e == 4)
+                {
+                    break;
+                }
+                Console.WriteLine(e);
+            }
+            
+            /*
+                the continue can be used to break a loop when condition is met and continue on the next loop iteration 
+                break and continue can be used in while loops            
+             */
+
+            for (int f = 0; f < 10; f++)
+            {
+                if (f == 4)
+                {
+                    continue;
+                }
+                Console.WriteLine(f); // 4 is skipped
+            }
+            
+            // END LOOPS
+            // NEXT ARRAYS IN HELLOWORLD3
         }
     }
 }
