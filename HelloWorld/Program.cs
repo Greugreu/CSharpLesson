@@ -143,7 +143,15 @@ namespace HelloWorld
             // can reference string character via index numbers, starts at 0
             Console.WriteLine(interpolation[0]); // output "M"
             // can ask for index number with IndexOf()
-            Console.WriteLine(interpolation.IndexOf("y"));
+            Console.WriteLine(interpolation.IndexOf("y")); // outputs 2
+            
+            // substring, extracts a character using position/index and returns a new string
+            int charPos = interpolation.IndexOf("D"); // get location of "D"
+            string charName = interpolation.Substring(charPos); // get the lastname
+            Console.WriteLine(charName); // print result
+            
+            // END
+            // NEXT IN NEW SOLUTION HELLOWORLD2
         }
     }
 }
