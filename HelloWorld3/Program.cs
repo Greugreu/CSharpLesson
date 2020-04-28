@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace HelloWorld3
 {
@@ -45,6 +46,40 @@ namespace HelloWorld3
             {
                 Console.WriteLine(animal);
             }
+            
+            // to sort an array, method sort() allows to sort alphabetically or ascending order
+            Array.Sort(animals);
+            foreach (string animal in animals)
+            {
+                Console.WriteLine(animal);
+            }
+            
+            // other methods can be found in System.Linq (we added new object use) as Min, Max, Sum
+            int[] numbers = {5, 4, 6, 8, 9, 12, 7, 3, 56};
+            Console.WriteLine(numbers.Max()); // returns largest value
+            Console.WriteLine(numbers.Min()); // returns smallest value
+            Console.WriteLine(numbers.Sum()); // returns sum of elements
+            
+            // DIFFERENT WAYS TO CREATE ARRAYS
+            
+            // create an array of four elements, and add values later
+            string[] fruits = new string[4];
+            
+            // create an array of four elements and add values right away
+            string[] fruits2 = new string[4] {"Apple", "Banana", "Coconut", "Watermelon"};
+            
+            // create an array of four elements without specifying it's size
+            string[] fruits3 = new string[] {"Apple", "Banana", "Coconut", "Watermelon"};
+            
+            // create an array as before
+            string[] fruits4 = {"Apple", "Banana", "Coconut", "Watermelon"};
+            
+            // however, to create an empty array and add values later, need to use "new" keyword.
+            string[] fruits5;
+            // fruits5 = {"Apple", "Banana", "Coconut", "Watermelon"}; not working
+            fruits5 = new string[] {"Apple", "Banana", "Coconut", "Watermelon"}; // working
+            
+            // END ARRAYS NEXT METHODS AND POO IN NEW REPOS CSharpPOO
         }
     }
 }
