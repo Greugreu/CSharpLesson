@@ -102,6 +102,43 @@ namespace HelloWorld2
             // the default keyword is optional and specifies code to run if no match.
             
             // WHILE LOOP
+            /*
+                Allow a block of code to run as long as the condition is true
+                
+                while (condition)
+                {
+                    code
+                }
+                
+             */
+
+            int i = 0;
+            while (i<5)
+            {
+                Console.WriteLine("Value of i: {0}", i);
+                i++;
+            }
+            
+            // DO WHILE
+            /*
+                do/while is a variant of while. It will execute code once, before checking if condition is true
+                then repeat the loop as long as it is true
+                
+                do
+                {
+                    code
+                }
+                while (condition)
+             */
+            int a = 0;
+            do
+            {
+                Console.WriteLine("Value of a {0}", a);
+                a++;
+            }
+            while (a < 5);
+            
+            // FOR LOOP
         }
     }
 }
